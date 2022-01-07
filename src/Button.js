@@ -1,9 +1,5 @@
-const Button = (props) => {
-	//console.log(props);
+const button = (props) => (
+	<button>Click here to vote for {props.userName}</button>
+);
 
-	const { buttonText, onClick } = props;
-
-	return <button onClick={onClick}>{buttonText}</button>;
-};
-
-export default Button;
+export default button;

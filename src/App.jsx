@@ -1,20 +1,21 @@
 import "./App.css";
-import Button from "./Button";
-
-const randomString = "This is a button";
+// import Buttonlist from "./Buttonlist";
+import ButtonlistWithMap from "./ButtonListWithMap.js";
+// const btnText = "Click Me!";
+import Profile from "./Profile";
+import Profile2 from "./Profile2";
+import Profile3 from "./Profile3";
+import Profile4 from "./Profile4";
 
 function App() {
-	const addDiv = () => {
-		//console.log("text");
-
-		document
-			.getElementById("root")
-			.insertAdjacentHTML("beforeend", "<div>This is a new div</div>");
-	};
-
 	return (
 		<div className="App">
-			<Button buttonText={randomString} onClick={addDiv} />
+			{/*  <Buttonlist />  */}
+			<ButtonlistWithMap />
+			<Profile />
+			<Profile2 />
+			<Profile3 />
+			<Profile4 />
 		</div>
 	);
 }
